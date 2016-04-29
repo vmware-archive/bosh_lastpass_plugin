@@ -11,9 +11,44 @@ gem install bosh_lastpass_plugin
 ```
 
 ## How to use
+
+Use the `lpass` method in your deployment manifest to extract credentials out of lpass
+
+For example:
+```yaml
+---
+name: foo-deploy
+
+director_uuid: 76f2d2b1-fc3f-47d2-bbfe-4109dc799887
+
+releases:
+  - name: &my-release
+    version: latest
+
+stemcells:
+  - alias: trusty
+    os: ubuntu-trusty
+    version: latest
+
+instance_groups:
+  - name: my-job
+    instances: 1
+    jobs:
+      - name: my-job
+        release: *my-release
+    vm_type: medium
+    persistent_disk_type: ten
+    stemcell: trusty
+    networks:
+      - name: my-job
+
+properties:
+  aws:
+    access_key: <%= lpass "shared/aws", "username" %>
+    secret_access_key: <%= lpass "shared/aws", "password" %>
 ```
-bosh say hello
-```
+
+
 
 ## Contributing
 
