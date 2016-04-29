@@ -1,4 +1,4 @@
-# Bosh plugin generator
+# Bosh lastpass plugin
 
 Short description.
 
