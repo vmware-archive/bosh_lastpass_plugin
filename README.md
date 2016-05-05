@@ -1,6 +1,6 @@
 # Bosh lastpass plugin
 
-Short description.
+Store bosh secrets in lastpass instead of the manifest. 
 
 ## What is BOSH?
 BOSH orchestrates initial deployments and ongoing updates that are: predictable, repeatable, reliable, self-healing, infrastructure-agnostic. You can take a look on [BOSH project on GitHub](https://github.com/cloudfoundry/bosh) and read more details in [docs](http://docs.cloudfoundry.org/bosh/).
