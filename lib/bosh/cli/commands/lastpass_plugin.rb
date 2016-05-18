@@ -2,15 +2,14 @@ require "bosh/lastpass_plugin"
 
 module Bosh::Cli::Command
   class LastpassPlugin < Base
-    include Bosh::LastpassPlugin::Helpers
-    extend Bosh::LastpassPlugin::YamlReader
+    extend Bosh::LastpassPlugin::Additions
 
     inject_into_yaml_parsing
 
-    usage "lpass"
+    usage "lastpass keys"
     desc "simple BOSH CLI plugin"
     def perform
-      say_hello
+      p "hello"
     end
 
   end

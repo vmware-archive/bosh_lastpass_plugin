@@ -8,7 +8,6 @@ module Bosh
 end
 
 
-require "bosh/lastpass_plugin/helpers"
 require "bosh/lastpass_plugin/version"
-require "bosh/lastpass_plugin/yaml_reader"
+require "bosh/lastpass_plugin/additions"
 require "bosh/cli/commands/lastpass_plugin"
