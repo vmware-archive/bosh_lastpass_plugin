@@ -10,6 +10,8 @@ BOSH orchestrates initial deployments and ongoing updates that are: predictable,
 gem install bosh_lastpass_plugin
 ```
 
+If `BOSH_USE_BUNDLER=true` is set in your environment, you would need to add the gem to the bosh bundle file located at `$GEM_HOME/gems/bosh_cli-$BOSH_VERISON/bin/run_bosh_with_bundler.Gemfile`. The bosh version can be found using the `version` subcommand on the bosh cli. 
+
 ## How to use
 
 Use the `lpass` method in your deployment manifest to extract credentials out of lpass
