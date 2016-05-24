@@ -6,10 +6,11 @@ module Bosh::Cli::Command
 
     inject_into_yaml_parsing
 
-    usage "lastpass keys"
-    desc "simple BOSH CLI plugin"
-    def perform
-      p "hello"
+    usage "lastpass show manifest"
+    desc "display the manifest with lastpass keys substituted"
+    def show_manifest
+      deployment_required
+      puts ERB.new(File.read(deployment)).result
     end
 
   end
