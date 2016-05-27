@@ -7,6 +7,7 @@ module Bosh
             output = `lpass show #{key} --#{type}`
             if $?.exitstatus != 0
               say "Error: BOSH Lastpass Error failed to fetch #{key}"
+              say "Error: #{output}"
               exit($?.exitstatus)
             end
             output

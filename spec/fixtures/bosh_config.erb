@@ -1,0 +1,16 @@
+---
+target: https://whatever.com:25555
+target_name: Bosh Lite Director
+target_version: 1.3215.0 (00000000)
+target_uuid: 17a45148-1d00-43bc-af28-9882e5a6535a
+ca_cert:
+  https://whatever.com:25555:
+aliases:
+  target:
+    17a45148-1d00-43bc-af28-9882e5a6535a: https://whatever.com:25555
+auth:
+  https://whatever.com:25555:
+    username: admin
+    password: admin
+deployment:
+  https://whatever.com:25555: "<%= File.dirname(__FILE__) %>/deployment.yml"

@@ -1,5 +1,5 @@
 ---
-name: kafka-on-demand-broker-dev2
+name: fixture-deployment
 
 director_uuid: 17a45148-1d00-43bc-af28-9882e5a6535a
 
@@ -19,3 +19,4 @@ instance_groups:
       - name: syslog
         release: syslog
         properties:
+          username: <%= lpass "test_note", "test_field" %>
