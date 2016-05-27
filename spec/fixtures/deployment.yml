@@ -1,0 +1,21 @@
+---
+name: kafka-on-demand-broker-dev2
+
+director_uuid: 17a45148-1d00-43bc-af28-9882e5a6535a
+
+releases:
+  - name: syslog
+    version: 7
+
+stemcells:
+  - alias: trusty
+    os: ubuntu-trusty
+    version: latest
+
+instance_groups:
+  - name: broker
+    instances: 1
+    jobs:
+      - name: syslog
+        release: syslog
+        properties:

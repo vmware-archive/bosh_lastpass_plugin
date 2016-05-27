@@ -9,4 +9,6 @@ $:.unshift(File.expand_path("../../lib", __FILE__))
 require "rspec/core"
 require "rspec/its"
 
-require "bosh/lastpass_plugin"
+def fixtures name
+  File.join(File.dirname(__FILE__), "fixtures", name)
+end

@@ -1,7 +1,7 @@
 module Bosh
   module LastpassPlugin
     module Additions
-      def inject_into_yaml_parsing
+      def self.inject_lastpass
         ::BoshExtensions.module_eval do
           def lpass key,type
             output = `lpass show #{key} --#{type}`
