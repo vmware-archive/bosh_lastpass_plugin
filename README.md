@@ -4,9 +4,6 @@
 
 Store bosh secrets in lastpass instead of the manifest. 
 
-## What is BOSH?
-BOSH orchestrates initial deployments and ongoing updates that are: predictable, repeatable, reliable, self-healing, infrastructure-agnostic. You can take a look on [BOSH project on GitHub](https://github.com/cloudfoundry/bosh) and read more details in [docs](http://docs.cloudfoundry.org/bosh/).
-
 ## How to install
 ```
 gem install bosh_lastpass_plugin
@@ -61,6 +58,9 @@ properties:
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## What is BOSH?
+BOSH orchestrates initial deployments and ongoing updates that are: predictable, repeatable, reliable, self-healing, infrastructure-agnostic. You can take a look on [BOSH project on GitHub](https://github.com/cloudfoundry/bosh) and read more details in [docs](http://docs.cloudfoundry.org/bosh/).
 
 ## Notes
 
