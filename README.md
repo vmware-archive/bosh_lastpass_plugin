@@ -1,5 +1,7 @@
 # Bosh lastpass plugin
 
+[![Build Status](https://travis-ci.org/pivotal-cf/bosh_lastpass_plugin.svg?branch=master)](https://travis-ci.org/pivotal-cf/bosh_lastpass_plugin)
+
 Store bosh secrets in lastpass instead of the manifest. 
 
 ## What is BOSH?
