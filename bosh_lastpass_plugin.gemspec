@@ -23,13 +23,12 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "bosh_cli",  ">= 1.2682.0"
   spec.add_runtime_dependency "bosh_common",  ">= 1.2682.0"
   spec.add_runtime_dependency "semi_semantic", ">= 1.1.0"
-  spec.add_runtime_dependency "membrane", "~> 1.1.0"
-  spec.add_runtime_dependency "git", "~> 1.2.6"
+  spec.add_runtime_dependency "membrane", ">= 1.1.0"
+  spec.add_runtime_dependency "git", ">= 1.2.6"
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rspec", "~> 3.1.0"
   spec.add_development_dependency "rspec-its", '~> 1.1.0'
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rubocop"
-  spec.add_development_dependency "bosh_cli"
 end
